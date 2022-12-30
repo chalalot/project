@@ -142,9 +142,7 @@ body{
     user-select: none;
 }
 
-#sidebar ul li a{
 
-}
 
 #content{
     -ms-text-size-adjust: 100%;
@@ -199,4 +197,45 @@ body{
 
 #content div{
     align-items: left;
+}
+
+.sidebar{
+    flex: 1 1 0;
+    max-width: 300px;
+    padding: 2rem 1rem;
+    background-color: #212322;
+    border-radius: 8px;
+}
+.sidebar h3 {
+    color: rgb(159, 162, 167);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+.sidebar .menu {
+    margin: 0 -1rem;
+}
+
+.sidebar .menu .menu_item {
+    display: block;
+    padding: 1em 2em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+.sidebar .menu .menu_item:hover,
+.sidebar .menu .menu_item.is_active {
+    color: rgb(99, 139, 172);
+    border-right: 5px solid #73afc0;
+    
+}
+.app{
+    display: flex;
+    min-height: 100vh;
+}
+
+.menu_item{
+    width: 250px;
+    
 }
