@@ -1,44 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: "Open Sans",sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+p{
+    line-height: 2;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+:after, :before {
+    box-sizing: inherit;
+}
+
+div {
+    display: block;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+
+}
+
 #header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
-    background-color:whitesmoke;
+    padding: 0px 80px;
+    background-color: #1a1a1a;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+body{
+    background-color: #121212;
+    color: #fff;
 }
 
 #navbar{
     display: flex;
     align-items: center;
     justify-self: center;
-    position: relative;
+
 }
 
 #navbar li{
     list-style: none;
-    padding: 0 20px;
+    padding: 0 30px;
+    position: relative
 }
 
 #navbar li a{
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #fff;
     transition: 0.3s ease;
+    position: relative
 }
 
-#navbar li a:hover, #navbar li a.active {
-    color: rgb(191, 127, 255);
+#navbar li a:hover,
+#navbar li a.active{
+    color: #fff;
+    
 
 }
 
-#navbar li a.active::after, 
-#navbar li a:hover::after{
+#navbar li a:hover::after,
+#navbar li a.active::after{
     content: "";
-    width: 15%;
+    text-align: center;
+    width: 100%;
     height: 2px;
-    background-color: rgb(191, 127, 255);
+    background-color: #fff;
     position: absolute;
     bottom: -4px;
-    left: 60px;
+    left: 0px;
+
+}
+
+#sidebar *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: "Open Sans",sans-serif;
+    text-decoration: none;
+    position: fixed;
+    left: 0;
+    overflow-y: auto;
+    height: 100%;
+    padding: var(--font-size);
+    border-radius: 8px!important;
+    background-color: #1a1a1a;
+    flex-direction: column;
+}
+
+#sidebar header{
+    color: #fff;
+    text-align: left;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    user-select: none;
+}
+
+#sidebar ul li a{
+
+}
+
+#content{
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #fff;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    font-size: 16px;
+    word-wrap: break-word;
+    line-height: 1;
+    
+
+}
+
+
+#content *{
+    margin: auto;
+    width: 80%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    background: #1a1a1a;
+    border-radius: 8px;
+}
+
+#content>:first-child{
+    margin-top: 0!important;
+}
+
+#content h1{
+    font-size: 2.4em;
+    text-align: center;
+    font-family: Raleway,sans-serif;
+}
+
+#content h2{
+    font-size: 1.8em;
+    font-family: Raleway,sans-serif;
+}
+
+#content h1, content h2{
+    font-weight: 800!important;
+    line-height: 1.5!important;
+}
+
+#content h2, #content h2 ul{
+    line-height: 0.5;
+    margin-left: 10px;
+}
+
+#content h2, p{
+    margin-left: 10px;
+}
+
+#content div{
+    align-items: left;
 }
