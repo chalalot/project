@@ -7,10 +7,76 @@
     <title>Communication In Computer Network</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="prototype.css"> -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <section id="header">
-        <a href="index.html"><img src="img/4bittters-logo-removebg-preview.png" width="120" height="90" alt=""></a>
+    
+    
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx bx-menu'></i>
+          <span class="logo_name">
+            8BITTER</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-wifi' ></i>
+                <span class="link_name">Mediums</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Mediums</a></li>
+              <li><a href="#">IP</a></li>
+              <li><a href="#">TCP</a></li>
+              <li><a href="#">MAC address</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-package' ></i>
+                <span class="link_name">Methods</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Methods</a></li>
+              <li><a href="#">Packet</a></li>
+              <li><a href="#">Circuit switching</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-network-chart' ></i>
+                <span class="link_name">Network types</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Network types</a></li>
+              <li><a href="#">LAN</a></li>
+              <li><a href="#">WLAN</a></li>
+            </ul>
+          </li>
+          
+          
+          
+        </div>
+      </li>
+    </ul>
+      </div>
+      <section class="home-section">
+        <section id="header">
+        <a href="index.html"><!-- <img src="img/4bittters-logo-removebg-preview.png" width="120" height="90" alt=""> --></a>
 
         <div>
             <ul id="navbar">
@@ -19,25 +85,45 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-    </section><br>
-
-    <!-- <section id="sidebar">
-        <header>Communication In Computer Network</header><br>
-    </section> -->
-
-    <section id = "content">
-        <div>
-            <h1>Communication In Computer Network</h1>
-            <h2>Protocols</h2>
-            <p>Protocols are essential for successful transmission of data over a network. Each protocol defines a set of rules that must be agreed between sender and receiver. At the simplest level, a protocol could define that a positive voltage represents a bit with value 1. At the other extreme, a protocol could define the format of the first 40 bytes in a packet. The complexity of networking requires a very large number of protocols, a protocol suite is a collection of related protocols. TCP/IP is the dominant protocol suite for internet usage.</p>
-            <ul>
-                <li>
-                    <strong>Protocol:</strong>
-                    : A set of rules governing communication between computers.
-                </li>
-                <li>Ensures the computers that communicate understand each other.</li>
-            </ul>
-        </div>
+        
     </section>
+        
+        <div class="home-content">
+          <i class='bx bx-menu' ></i>
+          <span class="text">Drop Down Sidebar</span>
+        </div>
+        <section id = "content">
+            <div>
+                <h1>Communication In Computer Network</h1>
+                <h2>Protocols</h2>
+                <p>Protocols are essential for successful transmission of data over a network. Each protocol defines a set of rules that must be agreed between sender and receiver. At the simplest level, a protocol could define that a positive voltage represents a bit with value 1. At the other extreme, a protocol could define the format of the first 40 bytes in a packet. The complexity of networking requires a very large number of protocols, a protocol suite is a collection of related protocols. TCP/IP is the dominant protocol suite for internet usage.</p>
+                <ul>
+                    <li>
+                        <strong>Protocol:</strong>
+                        : A set of rules governing communication between computers.
+                    </li>
+                    <li>Ensures the computers that communicate understand each other.</li>
+                </ul>
+                <p>Protocols are essential for successful transmission of data over a network. Each protocol defines a set of rules that must be agreed between sender and receiver. At the simplest level, a protocol could define that a positive voltage represents a bit with value 1. At the other extreme, a protocol could define the format of the first 40 bytes in a packet. The complexity of networking requires a very large number of protocols, a protocol suite is a collection of related protocols. TCP/IP is the dominant protocol suite for internet usage.</p>
+            </div>
+        </section>
+      </section>
+      <script>
+      let arrow = document.querySelectorAll(".arrow");
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e)=>{
+       let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+       arrowParent.classList.toggle("showMenu");
+        });
+      }
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".bx-menu");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("close");
+      });
+      </script>
+    
+    </div>
 </body>
 </html>
