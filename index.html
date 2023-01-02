@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Communication In Computer Network</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <meta charset="UTF-8">
-    <!-- <link rel="stylesheet" href="prototype.css"> -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+     <!-- <link rel="stylesheet" href="prototype.css"> -->
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="script.js" defer></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     
@@ -31,14 +30,14 @@
             <div class="iocn-link">
               <a href="#">
                 <i class='bx bx-wifi' ></i>
-                <span class="link_name">Mediums</span>
+                <span class="link_name">Protocol</span>
               </a>
               <i class='bx bxs-chevron-down arrow' ></i>
             </div>
             <ul class="sub-menu">
-              <li><a class="link_name" href="#">Mediums</a></li>
-              <li><a href="#">IP</a></li>
-              <li><a href="#">TCP</a></li>
+              <li><a class="link_name" href="#">Protocol</a></li>
+              <li><a href="#IP">IP</a></li>
+              <li><a href="#TCP">TCP</a></li>
               <li><a href="#">MAC address</a></li>
             </ul>
           </li>
@@ -94,22 +93,32 @@
     </section>
         
         <div class="home-content">
-          <i class='bx bx-menu' ></i>
-          <span class="text">Drop Down Sidebar</span>
+          <!-- <i class='bx bx-menu' ></i> -->
+          
         </div>
-
         <section id = "content">
-          <div id="duy">
-            <h1>Communication In Computer Network</h1>
-            <h2>Protocols</h2>
-            <p>Protocols are essential for successful transmission of data over a network. Each protocol defines a set of rules that must be agreed between sender and receiver. At the simplest level, a protocol could define that a positive voltage represents a bit with value 1. At the other extreme, a protocol could define the format of the first 40 bytes in a packet. The complexity of networking requires a very large number of protocols, a protocol suite is a collection of related protocols. TCP/IP is the dominant protocol suite for internet usage.</p>
-            <ul id="duy2">
-              <li>
-                <strong>Protocol:</strong>
-                  A set of rules governing communication between computers.
-              </li>
-            </ul>
-          </div>
+            <div id="duy">
+                <h1>Communication In Computer Network</h1>
+                <h2>Protocols</h2>
+                <p>Protocols are essential for successful transmission of data over a network. Each protocol defines a set of rules that must be agreed between sender and receiver. At the simplest level, a protocol could define that a positive voltage represents a bit with value 1. At the other extreme, a protocol could define the format of the first 40 bytes in a packet. The complexity of networking requires a very large number of protocols, a protocol suite is a collection of related protocols. TCP/IP is the dominant protocol suite for internet usage.</p>
+                <ul id="duy2">
+                    <li>
+                        <strong>Protocol:</strong>
+                        : A set of rules governing communication between computers.
+                    </li>
+                    <li>Ensures the computers that communicate understand each other.</li>
+                </ul>
+                <h2 id="IP">Internet Protocol (IP)</h2>
+                <p>
+                  
+                  The Internet Protocol (IP) is a network layer protocol that is responsible for delivering packets of data from a source to a destination over a network. It does this by routing the packets through intermediate devices such as routers, which use IP addresses to determine the best path for the packets to take.
+                  An IP address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It serves two main functions: host or network interface identification and location addressing. IP addresses are written and displayed in human-readable notation, such as 192.168.1.1.
+                  There are two versions of IP in use today: IP version 4 (IPv4) and IP version 6 (IPv6). IPv4 is the most widely used version, but it is running out of available addresses due to the rapid growth of the internet. IPv6 was developed to address this issue and is now beginning to be adopted on a larger scale. It uses a 128-bit address space, which allows for significantly more addresses than IPv4's 32-bit address space.
+                  In addition to routing packets, IP also provides a number of other services, including fragmentation and reassembly of packets, time-to-live (TTL) value to prevent infinite routing loops, and error checking using a checksum.</p>
+                  <h2 id="TCP">Transmission Control Protocol (TCP)</h2>
+                  <p>Transmission Control Protocol (TCP) is a transport layer protocol that is responsible for establishing and maintaining a reliable connection between two devices and ensuring that data is delivered in the correct order. It does this by establishing a connection, breaking the data into segments, and sending each segment with a sequence number to the destination. The destination device then acknowledges receipt of each segment and sends the next segment in the sequence. If a segment is not acknowledged, TCP will retransmit it until it is received. This process ensures that data is delivered accurately and efficiently.
+                  TCP is often used in combination with IP, forming the Transmission Control Protocol/Internet Protocol (TCP/IP) suite of protocols. TCP/IP is the basis for communication on the internet and is used by almost all devices connected to the internet, including computers, smartphones, and tablets.</p>
+                </div>
         </section>
       </section>
       <script>
@@ -126,6 +135,7 @@
       sidebarBtn.addEventListener("click", ()=>{
         sidebar.classList.toggle("close");
       });
+      
       </script>
     
     </div>
