@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="intro-style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="home-section">
+        <section id="header">
+        <a href="index.html"></a>
+
+        <div>
+          <ul id="navbar">
+            <li><a class="active" href="intro.html">INTRODUCTION</li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about-us.html">ABOUT</a></li>
+            <li><a href="references.html">REFERENCES</a></li>
+
+        <div id="light">
+          <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+        </div>
+        
+      </section>
+    <div class="banner">
+        <img class="layer1" src="img/background.png" alt="">
+        <img class="layer2" src="img/meteor.png" alt="">
+        <div class="layer3">
+            <h1>Hello &amp; welcome</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi deleniti enim distinctio quae, rem beatae modi reprehenderit unde tenetur at commodi rerum esse asperiores laudantium, laboriosam voluptates incidunt ipsum id aspernatur. Obcaecati ab tempore adipisci illum delectus sit!</p>
+            <a href="#content">Get Started</a>
+        </div>
+        <img class="layer4" src="img/4.png" alt="">
+        <img class="layer5" src="img/5.png" alt="">
+        <img src="img/6.png" alt="">
+    </div>
+    <div class="content">
+        <h1 id="content">Project introduction</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos ad quos cum repellendus nisi velit hic magnam voluptates, unde omnis quam quaerat reiciendis. Consequuntur quos dolorum nihil inventore alias quia facere, optio voluptas dolor, saepe, officiis commodi. Ipsa laborum suscipit illo temporibus possimus sed ipsam similique obcaecati sapiente, perferendis dolorum sunt itaque officiis reprehenderit deleniti perspiciatis error quasi placeat incidunt eius quo soluta ullam? Sunt quasi cumque, quos ipsa nam quia consequuntur ab, unde aliquam delectus earum repellendus. Perspiciatis corporis hic natus. Aliquam magnam explicabo laborum, expedita non quos molestias rem magni, perspiciatis, distinctio ipsam mollitia obcaecati iure.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non perspiciatis voluptates consequuntur itaque tempora nobis unde eaque explicabo aut rerum vitae maxime iusto inventore nihil maiores, expedita quibusdam corporis minus modi libero in. Saepe, distinctio cum? Deserunt est laborum fugit nobis voluptas, sapiente animi optio velit odio accusantium, id non maxime autem recusandae iure tempora. Quisquam odit inventore nesciunt asperiores, pariatur ratione magnam quasi est non libero necessitatibus doloribus perferendis optio provident officiis voluptatum fugiat similique aut architecto. Perspiciatis sunt iusto recusandae quae aperiam, voluptatibus vitae. Expedita iusto nostrum doloremque et magnam, error quas ut rem? Ipsa, repellat?</p>
+    </div>
+</body>
+<script type="text/javascript">
+    let layer_1 = document.querySelector('.layer1');
+    let layer_2 = document.querySelector('.layer2');
+    let layer_3 = document.querySelector('.layer3');
+    let layer_4 = document.querySelector('.layer4');
+    let layer_5 = document.querySelector('.layer5');
+    
+    window.onscroll = function(){
+        let Y = window.scrollY;
+        layer_1.style.transform = 'translateY('+ Y/1.5 + 'px)';
+        layer_2.style.transform = 'translateY('+ Y/2 + 'px)';
+        layer_3.style.transform = 'translateY('+ Y/1.5 + 'px)';
+        layer_4.style.transform = 'translateY('+ Y/2 + 'px)';
+        layer_5.style.transform = 'translateY('+ Y/3 + 'px)';
+    }
+</script>
+</html>
