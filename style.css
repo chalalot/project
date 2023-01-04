@@ -14,7 +14,7 @@ scroll-behavior: smooth;
 }
 
 body{
-background-color: #121212;
+  background: linear-gradient(to left, #0c0c20, #1d1d4f) ;
 color: #fff;
 }
 
@@ -79,7 +79,7 @@ position: fixed;
 display: block;
 align-items: center;
 justify-content: space-between;
-background-color: #1a1a1a;
+background: linear-gradient(to left, #b368c1, #1d1d4f 50%);
 box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 right: 0;
 padding-left: 1000px;
@@ -104,7 +104,10 @@ z-index: 9;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  background-image: linear-gradient(to right bottom, rgb(219, 253, 0), rgb(6, 255, 193));
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
   transition: 0.25s ease;
   position: relative
 }
@@ -140,30 +143,6 @@ z-index: 9;
 transition-delay: 2s;
 }
 
-#sidebar *{
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  font-family: "Open Sans",sans-serif;
-  text-decoration: none;
-  position: fixed;
-  left: 0;
-  overflow-y: auto;
-  height: 100%;
-  padding: var(--font-size);
-  border-radius: 8px!important;
-  background-color: #1a1a1a;
-  flex-direction: column;
-}
-
-#sidebar header{
-  color: #fff;
-  text-align: left;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-  user-select: none;
-}
-
-
 
 #duy{
 background-color: #1a1a1a;
@@ -186,7 +165,7 @@ top: 0;
 left: 0;
 height: 100%;
 width: 260px;
-background: #1a1a1a;
+background: linear-gradient(to right, #5c8cc4 30%, #1d1d4f);
 z-index: 100;
 transition: all 0.5s ease;
 }
@@ -389,7 +368,7 @@ font-size: 12px;
 }
 .home-section{
 position: relative;
-background: #121212;
+background: linear-gradient(to left, #0c0c20, #1d1d4f) ;
 height: 100vh;
 left: 260px;
 width: calc(100% - 260px);
@@ -457,12 +436,12 @@ padding: 20px 60px;
 width: 80%;
 box-sizing: border-box;
 margin-bottom: 2rem;
-background: #1a1a1a;
+
 border-radius: 8px;
 font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
 word-wrap: break-word;
 line-height: 1;
-background-color: #1a1a1a;
+background: linear-gradient(to left, #0c0c20, #1d1d4f 90%) ;
 position: relative;
 bottom: 0;
 }
@@ -473,14 +452,18 @@ margin-top: 0!important;
 
 .content h1{
 font-size: 2.4em;
-height: 100px;
+margin: auto;
 text-align: center;
 font-family: Raleway,sans-serif;
+background-image: linear-gradient(to right bottom, rgb(88, 146, 196), rgb(157, 142, 188));
+display: inline-block;
+color: transparent;
+-webkit-background-clip: text;
 }
 
 .content h2{
 font-size: 1.8em;
-padding: 20px;
+height: auto;
 font-family: Raleway,sans-serif;
 }
 
