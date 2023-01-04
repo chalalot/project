@@ -40,6 +40,7 @@
               <li><a href="#IP">IP</a></li>
               <li><a href="#TCP">TCP</a></li>
               <li><a href="#MAC-address">MAC address</a></li>
+              <li><a href="#TLS">TLS</a></li>
             </ul>
           </li>
           <li>
@@ -53,7 +54,7 @@
             <ul class="sub-menu">
               <li><a class="link_name" href="#Circuit-and-packet-switching">Methods</a></li>
               <li><a href="#Circuit-and-packet-switching">Circuit switching</a></li>
-              <li><a href="#">Packet switching</a></li>
+              <li><a href="#Packetswitching">Packet switching</a></li>
             </ul>
           </li>
           <li>
@@ -66,8 +67,9 @@
             </div>
             <ul class="sub-menu">
               <li><a class="link_name" href="#">Network types</a></li>
-              <li><a href="#">LAN</a></li>
-              <li><a href="#">WLAN</a></li>
+              <li><a href="#LAN">LAN</a></li>
+              <li><a href="#LAN">WLAN</a></li>
+              <li><a href="#Router">Router</a></li>
             </ul>
           </li>
 
@@ -157,7 +159,7 @@
               <li>It is preferred when communication is long and continuous.</li>
             </ul>
 
-            <p><strong>Packet switching</strong>is a method of data transfer in which the intended message is broken down into parts 
+            <p><strong id="Packetswitching">Packet switching</strong> is a method of data transfer in which the intended message is broken down into parts 
               and is sent over multiple routes in order to reach its destination and this is known as a packet. When the 
               packet arrives at the destination, it is job of the destination to put these packets in the right order.</p><br>
 
@@ -175,6 +177,141 @@
                 <li>Connectivity issues may lead to loss of information and delay in the delivery of the information.</li>
               </ul>
 
+              <h2 id="LAN">LAN</h2>
+              <p>
+                A LAN, or local area network, is a group of interconnected devices that communicate with each other 
+and share resources within a small geographical area, such as a home, office, or school. There are 
+several different types of LANs, each with its own unique features and benefits. 
+              </p><br>
+
+              <p>
+                1. Ethernet LAN: Ethernet is the most common type of LAN, particularly in corporate and educational 
+                environments. It uses a coaxial or twisted-pair cable to connect devices, such as computers, printers, 
+                and servers, to a central hub or switch. Ethernet LANs can operate at speeds of 10, 100, or 1000 
+                megabits per second (Mbps), depending on the technology used. They are reliable, fast, and easy to set 
+                up, making them a popular choice for many businesses. 
+              </p><br>
+
+              <p>
+                2. Wi-Fi LAN: A Wi-Fi LAN, also known as a wireless LAN, uses radio waves to transmit data between 
+devices without the need for physical cables. It is ideal for devices that do not have a fixed location, such 
+as laptops, smartphones, and tablets. Wi-Fi LANs can operate at speeds of up to 1 Gbps and have a 
+range of several hundred feet, depending on the device and the environment. They are convenient and 
+flexible, but may be less secure and have lower speeds than wired LANs. 
+              </p><br>
+
+              <p>
+                3. Token Ring LAN: A Token Ring LAN is a type of LAN that uses a ring topology and a special type of data 
+transmission called token passing. In this system, a token, or small data packet, is passed from¬¬¬¬ one 
+device to another in a specific order. Each device can only transmit data when it has possession of the 
+token. Token Ring LANs are less common than Ethernet LANs, but they offer higher speeds and better 
+security.
+              </p><br>
+
+              <p>
+                4. Fiber-Optic LAN: A fiber-optic LAN uses thin strands of glass or plastic to transmit data using light 
+signals. It is a fast and reliable option for transmitting large amounts of data over long distances. 
+However, it is more expensive and difficult to install than other types of LANs.
+              </p><br>
+
+              <p>
+                5. Bluetooth LAN: A Bluetooth LAN is a wireless LAN that uses Bluetooth technology to connect devices 
+within a short range (usually up to 30 feet). It is commonly used to connect devices such as headphones, 
+speakers, and keyboards to a computer or phone. Bluetooth LANs are convenient and low-power, but 
+have low speeds and a short range compared to other types of LANs.
+              </p><br>
+
+              <p>
+                6. HomePNA LAN: A HomePNA LAN is a type of LAN that uses a phone line to connect devices within a 
+home. It is an affordable and easy-to-use option for setting up a small home network. However, it has 
+limited speeds and is not as widely supported as other types of LANs
+              </p><br>
+
+              <p>
+                7. In conclusion, there are several different types of LANs, each with its own unique features and 
+benefits. The type of LAN that is best for you will depend on your specific needs and requirements, such 
+as the number of devices, the distance between them, the amount of data being transmitted, and the 
+level of security and speed required. References:
+              </p><br>
+
+              <h2 id="TLS">TLS</h2>
+              <p>
+                Transport Layer Security (TLS) is a cryptographic protocol that is used to secure communications over 
+the internet. It is the successor to the Secure Sockets Layer (SSL) protocol and is widely used to secure 
+data transmission on the internet, including email, web browsing, and voice over IP (VoIP). TLS works by 
+establishing an encrypted connection between two devices, such as a client and a server. It does this by 
+using a process called the TLS handshake, which involves the following steps: 
+              </p><br>
+                
+              <p>
+                1. The client sends a "hello" message to the server, which includes a list of supported cipher suites 
+(algorithms for encrypting and decrypting data).
+              </p><br>
+
+              <p>
+                2. The server responds with a "hello" message that includes a certificate containing the server's public 
+key and a list of cipher suites that it supports.
+              </p><br>
+
+              <p>
+                3. The client verifies the server's certificate and selects a cipher suite from the list of supported ones. 
+              </p><br>
+
+              <p>
+                4. The client generates a pre-master secret, which is encrypted using the server's public key and sent to 
+the server.
+
+              </p><br>
+
+              <p>
+                5. The server decrypts the pre-master secret using its private key and generates a master secret, which 
+is used to generate the session keys for encrypting and decrypting data.
+              </p><br>
+
+              <p>
+                6. The client and server send messages to each other indicating that the handshake is complete and that 
+they can start sending encrypted data. TLS is an important security feature that helps to protect against 
+man-in-the-middle attacks, in which an attacker intercepts and tries to modify data being transmitted 
+between two devices. It is also used to authenticate the identity of the server, which helps to prevent 
+phishing attacks
+              </p><br>
+
+              <p>
+                In summary, routers and TLS are two important technologies that play a crucial role in networking and 
+internet security. Routers are responsible for forwarding data packets between networks, while TLS is a 
+cryptographic protocol that is used to secure communications over the internet. Together, they help to 
+ensure that data is delivered accurately and securely.
+              </p><br>
+
+              <h2 id="Router">Router</h2>
+              <p>
+                A router is a networking device that forwards data packets between computer networks. It does this by 
+using routing tables and protocols to determine the best path for the packets to take based on their 
+destination. Routers are often used to connect different LANs or to connect a LAN to the internet. 
+Routers operate at the network layer (layer 3) of the OSI model, which means they are responsible for 
+routing packets based on their IP addresses. They use routing tables, which contain a list of destination 
+IP addresses and the corresponding next hop (the router or other device that the packet should be 
+forwarded to) to determine the best path for the packet. Routers also use protocols such as the Routing 
+Information Protocol (RIP) and the Open Shortest Path First (OSPF) protocol to communicate with other 
+routers and exchange routing information. In addition to routing packets, routers also perform other 
+functions such as network address translation (NAT), which allows devices on a private network to 
+connect to the internet using a single public IP address, and quality of service (QoS), which allows 
+routers to prioritize certain types of traffic or applications
+              </p><br>
+
+              <h2 id="TLS">Peer to Peer File Sharing</h2>
+              <p>
+               <strong>P2P file sharing</strong> generates a lot of network traffic in internet usage. It has no structure and no 
+controlling mechanism. Peers act as both client and servers and each peer is just one end system.
+
+              </p><br>
+
+              <p>
+                <strong>The BitTorrent protocol </strong> is the most used protocol because it allows fast sharing of files.
+
+ 
+               </p><br>
+  
 
 
       </section>
