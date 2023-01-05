@@ -85,7 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #74bbca;
+    background: linear-gradient(to left, #785cba, #6aadc1 );
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     right: 0;
     padding-left: 1000px;
@@ -186,7 +186,7 @@ img {
 }
 
 .layer3 a{
-    background-color: #7ff5ff;
+    background: linear-gradient(to left, #d894e4, #b2d7eb 50%);
     display: block;
     width: 140px;
     height: 40px;
