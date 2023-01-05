@@ -25,6 +25,7 @@
           <i class='bx bx-menu'></i>
           <span class="logo_name">
             8BITTER</span>
+
         </div>
         <ul class="nav-links">
           <li>
@@ -70,13 +71,17 @@
               <li><a href="#LAN">LAN</a></li>
               <li><a href="#LAN">WLAN</a></li>
               <li><a href="#Router">Router</a></li>
+              <li><a href="#P2P">Peer to Peer</a></li>
             </ul>
           </li>
-
-          <div id="change">
-            <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
-          </div>
           
+          <li>
+            <div class="iocn-link" id="change">
+              <a href="#">
+                <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+                <span class="link_name" id="modeIndicator">Light mode</span>
+              </a>
+            </div>
         </div>
       </li>
     </ul>
@@ -85,10 +90,10 @@
         <section id="header">
         <div>
           <ul id="navbar">
-            <li><a href="javascript:setTimeout(()=>{window.location = 'draftindex.html' },100);">Introduction</li>
-            <li><a class="active" href="javascript:setTimeout(()=>{window.location = 'html2.html' },100);">Home</a></li>
-            <li><a href="javascript:setTimeout(()=>{window.location = 'about-us.html' },100);">About</a></li>
-            <li><a href="javascript:setTimeout(()=>{window.location = 'references.html' },100);">References</a></li>
+            <li><a href="javascript:setTimeout(()=>{window.location = 'draftindex.html' },125);">Introduction</li>
+            <li><a class="active" href="javascript:setTimeout(()=>{window.location = 'html2.html' },125);">Content</a></li>
+            <li><a href="javascript:setTimeout(()=>{window.location = 'about-us.html' },125);">About</a></li>
+
         
     </section>
         
@@ -144,38 +149,56 @@
               <strong>Circuit switching</strong> is a method of data transfer in which the message is sent over a dedicated 
               communication channel. The channel is in the physical form. An example of this is a Landline Phone.
             </p><br>
-
-            <strong class="duy">Advantages:</strong>
-            <ul>
-              <li>The quality of communication is better.</li>
-              <li>While switching, no time is wasted in waiting.</li>
-              <li>It is preferred when communication is long and continuous.</li>
-            </ul>
-
-            <strong class="duy">Disadvantages:</strong>
-            <ul>
-              <li>Expensive because it used a dedicated channel establishment.</li>
-              <li>The time taken for the establishment of the physical path is too long.</li>
-              <li>It is preferred when communication is long and continuous.</li>
-            </ul>
+            <table>
+              <thead>
+                <tr>
+                  <th>Advantages</th>
+                  <th>Disadvantages</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>The quality of communication is better.</td>
+                  <td>Expensive because it used a dedicated channel establishment.</td>
+                </tr>
+                <tr>
+                  <td>While switching, no time is wasted in waiting.</td>
+                  <td>The time taken for the establishment of the physical path is too long.</td>
+                </tr>
+                <tr>
+                  <td>It is preferred when communication is long and continuous.</td>
+                  <td>The time taken for the establishment of the physical path is too long.</td>
+                </tr>
+              </tbody>
+            </table><br>
 
             <p><strong id="Packetswitching">Packet switching</strong> is a method of data transfer in which the intended message is broken down into parts 
               and is sent over multiple routes in order to reach its destination and this is known as a packet. When the 
               packet arrives at the destination, it is job of the destination to put these packets in the right order.</p><br>
 
-              <strong class="duy">Advantages:</strong>
-              <ul>
-                <li>No delay in the delivery of the packets.</li>
-                <li>No requirement for massive storage space.</li>
-                <li>Multiple users can use the same channel while transferring their packets.</li>
-              </ul>
-  
-              <strong class="duy">Disadvantages:</strong>
-              <ul>
-                <li>Installation costs of packet switching are expensive.</li>
-                <li>High-quality voice calls cannot use packet switching as there is a lot of delay.</li>
-                <li>Connectivity issues may lead to loss of information and delay in the delivery of the information.</li>
-              </ul>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Advantages</th>
+                    <th>Disadvantages</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>No delay in the delivery of the packets.</td>
+                    <td>Installation costs of packet switching are expensive.</td>
+                  </tr>
+                  <tr>
+                    <td>No requirement for massive storage space.</td>
+                    <td>High-quality voice calls cannot use packet switching as there is a lot of delay.</td>
+                  </tr>
+                  <tr>
+                    <td>Multiple users can use the same channel while transferring their packets.</td>
+                    <td>Connectivity issues may lead to loss of information and delay in the delivery of the information.</td>
+                  </tr>
+                </tbody>
+              </table><br>
 
               <h2 id="LAN">LAN</h2>
               <p>
@@ -233,6 +256,37 @@ benefits. The type of LAN that is best for you will depend on your specific need
 as the number of devices, the distance between them, the amount of data being transmitted, and the 
 level of security and speed required. References:
               </p><br>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>LAN</th>
+                    <th>WAN</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>A system that links the gadgets in a big, small area</td>
+                    <td>A system that links devices over a wider geographic area</td>
+                  </tr>
+                  <tr>
+                    <td>Private ownership only</td>
+                    <td>Public or private ownership</td>
+                  </tr>
+                  <tr>
+                    <td>Transmission method: Wi-Fi, coaxial cable, or twisted pair cable</td>
+                    <td>Transmission method: satellite connection or PSTN</td>
+                  </tr>
+                  <tr>
+                    <td>Greater rate of data transfer</td>
+                    <td>Less rapid data transfer</td>
+                  </tr>
+                  <tr>
+                    <td>Fewer obstructions</td>
+                    <td>Increased congestion</td>
+                  </tr>
+                </tbody>
+              </table><br>
 
               <h2 id="TLS">TLS</h2>
               <p>
@@ -299,7 +353,7 @@ connect to the internet using a single public IP address, and quality of service
 routers to prioritize certain types of traffic or applications
               </p><br>
 
-              <h2 id="TLS">Peer to Peer File Sharing</h2>
+              <h2 id="P2P">Peer to Peer File Sharing</h2>
               <p>
                <strong>P2P file sharing</strong> generates a lot of network traffic in internet usage. It has no structure and no 
 controlling mechanism. Peers act as both client and servers and each peer is just one end system.
