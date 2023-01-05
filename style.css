@@ -83,7 +83,7 @@ justify-content: space-between;
 background: linear-gradient(to left, #3375a7, #1d1d4f 50%);
 box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 right: 0;
-padding-left: 1000px;
+padding-left: 2000px;
 z-index: 9;
 }
 
@@ -428,7 +428,7 @@ margin: 0;
 
 .transformed-state {
 transition: 2s;
-background-color: #fff;
+background: linear-gradient(to left, #fff, #0c0c20);
 color: black;
 }
 
@@ -498,38 +498,66 @@ word-wrap: break-all;
 line-height: 2;
 }
 
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+
+td, th {
+  border: 1px solid #fff;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
 
 .transformed-state {
-background-color: #fff;
-color: #1a1a1a;
+  background: linear-gradient(to left, #feffae, #f3a963 90%);
+  color: #1a1a1a;
+}
+
+.iocn-link #change{
+  height: 60px;
+  min-width: 65px;
+  text-align: center;
+  line-height: 50px;
+  color: rgb(162, 255, 0);
+  font-size: 20px;
+  cursor: pointer;
+  bottom: 0;
+  position: fixed;
 }
 
 #change{
-height: 60px;
-min-width: 65px;
-text-align: center;
-line-height: 50px;
-color: #fff;
-font-size: 20px;
-cursor: pointer;
-bottom: 0;
-position: fixed;
+  height: 60px;
+  min-width: 65px;
+  text-align: center;
+  line-height: 50px;
+  color: rgb(162, 255, 0);
+  font-size: 20px;
+  cursor: pointer;
+  bottom: 0;
+  position: fixed;
+}
+
+#modeIndicator{
+  user-select: none;
 }
 
 ::-webkit-scrollbar {
 width: 10px;
-background-color: rgb(21, 21, 21);
+background-color: #3375a7
 }
 
 ::-webkit-scrollbar-thumb {
 box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
-background-color: #555;
+background-color: #fff;
 border-radius: 25px;
 }
 
 ::-webkit-scrollbar-track {
 box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
-background-color: rgb(21, 21, 21);
+background-color: #3375a7;
 border-radius: 25px;
 }
 
