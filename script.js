@@ -51,16 +51,16 @@ function change() {
 
   if (darkMode === "true") {
     document.getElementById("modeIndicator").classList.add("dark-mode");
-    document.getElementById("modeIndicator").innerHTML = "Dark mode";
+    document.getElementById("modeIndicator").innerHTML = "Light mode";
   }
 
   document.getElementById("modeIndicator").onclick = function() {
     this.classList.toggle("dark-mode");
     if (this.classList.contains("dark-mode")) {
-      this.innerHTML = "Dark mode";
+      this.innerHTML = "Light mode";
       localStorage.setItem("darkMode", "true");
     } else {
-      this.innerHTML = "Light mode";
+      this.innerHTML = "Dark mode";
       localStorage.setItem("darkMode", "false");
     }
   };
