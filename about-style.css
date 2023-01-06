@@ -431,7 +431,7 @@
   background-color: #fff;
   color: black;
   }
-  
+
 .content {
   color: #fff;
   margin: auto;
@@ -530,4 +530,11 @@
   }
   .layer5 {
   z-index: 8;
+  }
+
+  #modeIndicator {
+    color: rgb(162, 255, 0);
+  }
+  #modeIndicator.dark-mode {
+    color: rgb(162, 255, 0);
   }
