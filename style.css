@@ -276,11 +276,11 @@ display: block;
 
 .sidebar .nav-links li .sub-menu a{
   color: rgb(162, 255, 0);
-font-size: 15px;
-padding: 5px 0;
-white-space: nowrap;
-opacity: 0.6;
-transition: all 0.25s ease;
+  font-size: 15px;
+  padding: 5px 0;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: all 0.25s ease;
 }
 .sidebar .nav-links li .sub-menu a:hover{
 opacity: 1;
@@ -528,18 +528,6 @@ td, th {
   position: fixed;
 }
 
-#change{
-  height: 60px;
-  min-width: 65px;
-  text-align: center;
-  line-height: 50px;
-  color: rgb(162, 255, 0);
-  font-size: 20px;
-  cursor: pointer;
-  bottom: 0;
-  position: fixed;
-}
-
 #modeIndicator{
   user-select: none;
 }
@@ -572,4 +560,11 @@ z-index: 8;
 }
 .layer5 {
 z-index: 8;
+}
+
+#modeIndicator {
+  color: rgb(162, 255, 0);
+}
+#modeIndicator.dark-mode {
+  color: rgb(162, 255, 0);
 }
