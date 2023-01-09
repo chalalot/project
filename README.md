@@ -47,7 +47,11 @@ branch. You can commit your changes within that fork, and send a pull request to
 changes suggesstion are welcomed with our verification before getting confirmed and merged to the main branch.
 
 Team Credits:
+
 Tran Tuan Trung - s3978165 - s3978165@rmit.edu.vn. 
+
 Nguyen Pham Hai Anh - s3978692 - s3978692@rmit.edu.vn. 
+
 Tran Duc Duy - s3978690 - s3978690@rmit.edu.vn.
+
 Nguyen Minh Hieu - s3978107 - s3978107@rmit.edu.vn.
