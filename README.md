@@ -1,8 +1,8 @@
-                                          Welcome to our group repository. 
+ Welcome to our group repository. 
 
  This is our main working space in this project. The repository included our resources for the project and the final product
 
-                                        RMATES project: Notes within students
+ RMATES project: Notes within students
 
 Topic:
   Overall, anyone interested in the topic of Information Technology can find a wealth of information on our website. 
